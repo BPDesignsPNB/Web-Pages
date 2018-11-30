@@ -1,0 +1,74 @@
+
+//COLOR PALETTE VARIABLES
+$prim-darkBlue: #161921;
+$prim-blue: #0E1E33;
+$sec-blue: #17283B;
+$prim-gold: #BE8E57;
+$sec-lightGold: #F2E3CF;
+
+//BACKGROUND IMAGES
+$landing-img: url(../img/homeBg.png);
+$services-img: url();
+$work-img: url();
+$about-img: url(../img/About/aboutBg.png);
+$contact-img: url();
+
+//BRAND-PORTRAIT IMAGES
+$brand-img: url(../img/Header/BPbranding.png);
+$portrait-img: url(../img/Header/avatar2.png);
+
+//TRANSITION EFFECT MIXIN
+@mixin easeOut {
+    transition: all .8s ease-out;
+}
+
+//BACKGROUND MIXIN
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-size: 1500px 1000px;
+            background-repeat: no-repeat;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-color: rgba($primary-color, $background-opacity);
+            }
+        }
+    }
+}
+
+//------MEDIA QUERY MIXINS------ //
+
+//Small
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+//Medium
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+//Large
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+//Extra Large
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}

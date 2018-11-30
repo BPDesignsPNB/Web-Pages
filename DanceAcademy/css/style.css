@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body{
+  font-family: 'Monserrat';
+  margin: 0;
+  font: 1em;
+}
+
+.content{
+  widows: 100%;
+  background-attachment: #222;
+  height: 70px;
+  color: #fff
+}
+
+.navbar .lobo{
+  float: left;
+  height: 40px;
+  padding: 15px 30px;
+  font-size: 1.4em;
+  line-height: 40px;
+}

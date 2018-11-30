@@ -1,0 +1,14 @@
+{
+  "name": "BP Designs Portfolio",
+  "version": "1.0.0",
+  "description": "Personal Web Dev Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Pablo Beccalli",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

@@ -1,0 +1,151 @@
+:root{
+  --blue: #1B3B6F;
+  --lblue: #6CC3EA;
+  --lightb: #7AA4D6;
+  --off: #CEE5F2;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+
+
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* 'Playfair Display', Serif */
+/* ////////////////////////////////////////////// */
+
+body{
+  font-family: 'Noto-Serif', Sans-Serif;;
+  font: 1em;
+  background-image: url('wall.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  background-blend-mode: overlay;
+
+}
+header h1{
+  font-family: 'Oxygen', Serif;
+  font-size: 3.3em;
+  color: var(--blue);
+  text-align: center;
+  font-weight: 400;
+}
+i{
+  font-size: 1.6em;
+  color: var(--blue);
+}
+.contact h3{
+  color: var(--blue);
+  font-size: 1.8em;
+  font-family: 'Oxygen', Serif;
+  font-weight: 300;
+}
+
+.container{
+  width: 100%;
+  height: 500px;
+}
+.box{
+  background: rgba(206, 229, 242, 0.4);
+  width: 40%;
+  height: 450px;
+  margin: auto 4em;
+  text-align: center;
+  display: block;
+  float: left;
+  border-radius: 8px;
+}
+
+#map{
+  height: 260px;
+  width: 95%;
+  margin: 2% auto;
+  border-radius: 8px;
+}
+
+form{
+  max-width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+form input,
+form textarea{
+  border: none;
+  outline: none;
+  padding: 0.9em;
+  border-radius: 8px;
+  display: block;
+  width: 90%;
+  font-family: Montserrat;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+form #input-name,
+#input-email{
+  margin-bottom: 2.7em;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0 20px var(--blue);
+}
+
+form #input-submit {
+  color: var(--blue);
+  background: var(--lightb);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 4% auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+form #input-submit:hover {
+  color: #FFFFFF;
+  background: var(--blue);
+  transition: 0.5s;
+  box-shadow: 0 0 20px var(--blue);
+}
+
+form textarea {
+  height: 170px;
+}
+
+.half {
+  float: left;
+  width: 40%;
+  margin-bottom: 1em;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.right {
+  float: right;
+  width: 45%;
+}
+.left {
+  width: 40%;
+  margin-right: 2%;
+}

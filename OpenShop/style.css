@@ -1,0 +1,836 @@
+:root{
+  /* PALLETE */
+  --greenOrigin: #3cb371;
+  --green: #3cb371;
+  --lGreen: #A6DCBE;
+  --offwhite: #FFFFFF;
+  --grey: #808F85;
+  --lGrey: #E2E2E2;
+  --bg: #2C302E;
+  --red: #CD4747;
+
+  /* FONTS */
+  --master: 'Raleway';
+  --alter: 'Merriweather';
+}
+
+html,
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+
+.clearing{
+  content: "";
+  clear: right;
+}
+
+.title{
+  font-family: "Raleway";
+  margin-top: 0px;
+  padding-top: 60px;
+  font-size: 3.5em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 4px;
+  color: var(--bg)
+}
+
+/* ------------------HOME-------------------------------------------*/
+
+header{
+  height: 500px;
+  text-align: center;
+}
+.header-content h1{
+  font-family: "Raleway";
+  font-size: 3.6em;
+  letter-spacing: 8px;
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 220px;
+  text-align: center;
+  z-index: 10;
+  color: var(--offwhite);
+}
+
+.header-content h1 strong{
+  font-family: "Raleway";
+  color: var(--lGrey);
+}
+
+.container{
+  max-width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap{
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10;
+  left: 0;
+  background-color: var(--green);
+  z-index: -2;
+  opacity: 0.85;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+  margin-right: -100px;
+
+}
+
+.header-overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10;
+  left: 0;
+  background-color: var(--green);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.header-content{
+  z-index: 2;
+}
+/* ---------------NAVBAR--------------------- */
+nav{
+  background-color: var(--offwhite);
+  padding: 5px;
+}
+nav img{
+  float: left;
+  padding-left: 20px;
+  width: 12%;
+  margin-top: -22px;
+}
+nav ul li{
+  margin-top: -3px;
+  margin-bottom: 9px;
+  float: right;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav .nav-button{
+  padding: .3em .9em .3em .9em;
+  text-transform: capitalize;
+}
+nav .nav-button:hover{
+  padding: .3em .9em .3em .9em;
+  text-transform: capitalize;
+  text-transform: all ease in-out;
+  transition: .9s;
+}
+nav .button{
+  margin-top: -5px;
+  margin-left: 50px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 1em;
+  margin-left: 20px;
+  margin-right: 20px;
+  clear: right;
+  color: var(--grey);
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+nav ul li a i{
+  color: var(--grey);
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: var(--offwhite);
+  font-weight: 500;
+  background-color: var(--lGreen);
+  padding-top: 30.52px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-transform: all ease in-out;
+  transition: .2s;
+}
+
+/* ----------MAIN--------------- */
+
+.main{
+  height: 700px;
+  background-color: var(--offwhite);
+  font-family: 'Raleway';
+}
+.main h1{
+  color: var(--bg);
+  padding-top: 250px;
+}
+.main p{
+  font-family: 'Merriweather';
+  font-weight: 200;
+  margin-top: 0px;
+  line-height: 30px;
+  margin-left: 65px;
+  margin-top: 25px;
+  margin-bottom: 70px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.box{
+  width: 45%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.box p{
+  margin-left: 50px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 80px;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.main img{
+  width: 100%;
+}
+
+.button{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--green);
+  border: 1px solid var(--green);
+  background-color: var(--offwhite);
+  border-radius: 5px;
+  padding: .5em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.button:hover{
+  text-transform: uppercase;
+  font-size: 1em;
+  color: var(--offwhite);
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  transition: .9s;
+  transform: all ease in-out;
+}
+
+/* ----------------------------TESTIMONIOS---------------------------*/
+/* FLEX LAYOUT*/
+
+.testimonials{
+  background-color: var(--green);
+  height: 700px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.testimonials h1{
+  font-family: 'Raleway';
+  color: var(--offwhite);
+}
+
+.container-testimonials{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    position: relative;
+}
+
+.testimonial{
+    width: 250px;
+    margin: 20px 50px 20px 50px;
+    background: var(--offwhite);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.photo-perfil1,
+.photo-perfil2,
+.photo-perfil3{
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    border-radius: 80791992%;
+    position: relative;
+    top: -45px;
+}
+
+.photo-perfil1{
+  border: 1px solid var(--bg);
+  background-size: 160px;
+  background-image: url('img/avatar1.jpg');
+  background-position: -10px 0px;
+}
+.photo-perfil2{
+    border: 1px solid var(--bg);
+    background-size: 160px;
+    background-image: url('img/avatar3.jpg');
+    background-position: -10px 0px;
+}
+.photo-perfil3{
+  border: 1px solid var(--bg);
+  background-size: 160px;
+  background-image: url('img/avatar2.jpg');
+  background-position: -10px 0px;
+}
+.testimonial h2{
+  margin-top: -10px;
+  font-family: 'Merriweather';
+}
+.testimonial p{
+    margin-top: 10px;
+    font-weight: 250;
+    color: var(--tColor);
+    font-family: 'Merriweather';
+}
+
+/* ---------------INFO---------------------- */
+
+.info{
+  height: 750px;
+  background-color: var(--lGreen);
+}
+
+.col1{
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.col2{
+  float: right;
+  width: 40%;
+}
+
+.info ul li{
+  color: var(--bg);
+  text-decoration: none;
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-family: 'Merriweather';
+}
+
+.info i{
+  color: var(--green);
+  margin-right: 10px;
+}
+
+.graph{
+  float: left;
+  width: 55%;
+  margin-left: 22.5%;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.info img{
+  width: 100%;
+}
+
+/* ----------------FIXED BACKGROUND---------------------- */
+
+.fixed-background{
+  height: 300px;
+  text-align: center;
+  background-image: url('img/tableShop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.fixed-background p{
+  margin-top: 0;
+  padding-top: 70px;;
+  font-size: 3em;
+  letter-spacing: 6px;
+  line-height: 80px;
+  color: var(--green);
+  z-index: 1;
+  font-style: oblique;
+  font-family: 'Merriweather';
+  font-weight: 300;
+}
+
+.fixed-overlay{
+  height: 300px;
+  width: 100%;
+  top: 10;
+  left: 0;
+  background-color: var(--bg);
+  z-index: -2;
+  opacity: 0.85;
+}
+
+/* ----------------SPONSORS---------------------- */
+
+.sponsors{
+  text-align: center;
+  font-family: 'Raleway';
+  height: 600px;
+}
+.sponsors h1{
+  color: var(--bg);
+
+}
+
+.partners{
+  float: left;
+  width: 62%;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.partners img{
+  width: 70%;
+  opacity: .7;
+}
+
+/* ----------------FOOTER---------------------- */
+
+footer{
+  background-color: var(--bg);
+  height: 100px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.boxf{
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+footer .boxdev p{
+  color: var(--green);
+  font-family: 'Merriweather';
+  margin-left: 3px;
+  margin-top: 35px;
+  color: var(--green)
+}
+footer a{
+  font-family: 'Merriweather';
+  text-decoration: none;
+  color: var(--offwhite);
+  font-size: .8em;
+  margin-left: 40px;
+  display: inline-block;
+  margin-top: 40px;
+  float: left;
+}
+
+footer img{
+  margin-top: -25px;
+  margin-left: 35%;
+  margin-right: 0%;
+  width: 20%;
+  z-index: 2;
+}
+footer .boxf .BP{
+  width: 2%;
+  float: left;
+  margin-left: 30px;
+  margin-top: -40px;
+}
+
+/*__________________________________________________________________*/
+
+
+/* ------------------CATALOGO ------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+  .productos{
+    height: 2300px;
+    background-image: url('img/catBg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+  }
+
+  /* TABLA DE PRODUCTOS */
+  .tblProductos{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg);
+    border-radius: 10px;
+    border-collapse: collapse;
+    opacity: .9;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+  .tblProductos td{
+    border-bottom: 2px solid var(--greenOrigin);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .tblProductos .PNombre{
+    color: var(--green);
+    font-size: 2em;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tblProductos .PInfo{
+    text-align: justify;
+    line-height: 30px;
+    width: 295px;
+  }
+  .tblProductos .PFoto{
+    width: 350px;
+    text-align: center;
+  }
+  .tblProductos p{
+    color: var(--offwhite);
+  }
+
+  .tblProductos img{
+    width: 65%;
+    border-radius: 5px;
+    display: block;
+    margin-left: 16%;
+    margin-right: auto;
+  }
+  .tblProductos label{
+    font-size: 2em;
+    text-align: center;
+    color: var(--green);
+  }
+/* ------------------OFERTAS----------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+.ofertas{
+  height: 2500px;
+  background-image: url('img/ofertasBg.png');
+  background-position: center center;
+  background-size:contain;
+  background-repeat: repeat;
+}
+.ofertas h1{
+  color: var(--offwhite);
+  margin-bottom: 50px;
+}
+.ofertas span{
+  color: var(--green);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* TABLA DE OFERTAS */
+.tblOfertas{
+  width: 800px;
+  margin-bottom: 50px;
+  opacity: .8;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.tblOfertas img{
+  width: 50%;
+  border-radius: 5px;
+  display: block;
+  margin-left: 26%;
+  margin-right: auto;
+}
+.tblOfertas img:hover{
+  width: 55%;
+  border-radius: 5px;
+  display: block;
+  margin-left: 24%;
+  margin-right: auto;
+  transition: .6s;
+  transform-origin: all ease in-out;
+}
+
+.tblOfertas th{
+  text-transform: uppercase;
+  line-height: 70px;
+  font-size: 3.2em;
+  font-weight: 500;
+  color: var(--bg);
+  letter-spacing: .6px;
+  border-collapse: collapse;
+  background-color: var(--offwhite);
+  border-radius: 5px 5px 0 0;
+}
+.tblOfertas .PNombre,
+.tblOfertas .PFoto {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tblOfertas label{
+  font-size: 1.2em;
+  text-align: left;
+  color: var(--green);
+}
+.tblOfertas .pAnt{
+  font-size: .8em;
+  text-decoration: line-through;
+  text-align: left;
+  color: var(--red);
+}
+.tblOfertas small{
+  color: var(--offwhite);
+  font-size: .2em;
+  letter-spacing: 5px;
+}
+
+/* ------------------REVENTA---------------------------------------*/
+/* -----------------------------------------------------------------*/
+.reventa{
+  height: 850px;
+  background-image: url("img/reventaBg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+.reventa h1{
+  color: var(--offwhite);
+}
+
+.reventa .os{
+  text-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.t1{
+  float: left;
+  margin-left: 5%;
+  margin-right: 0;
+}
+
+/* TABLA DE REGISTRO */
+.tblRevendedor{
+  background-color: var(--bg);
+  border-radius: 5px;
+  border: 2px solid var(--bg);
+  opacity: .8;
+  width: 370px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.tblRevendedor th{
+  padding: 15px;
+  font-size: 1.5em;
+  color: var(--green);
+  letter-spacing: 4px;
+}
+.tblRevendedor tr{
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.tblRevendedor .lbl{
+  padding: 5px 0px 5px 5px;
+  text-align: right;
+  color: var(--offwhite);v
+}
+.tblRevendedor .elem{
+  padding: 15px 15px 5px 15px;
+  text-align: left;
+  color: var(--offwhite);
+}
+
+.tblRevendedor td .label{
+  text-align: left;
+}
+
+.tblRevendedor input[type="text"],
+.tblRevendedor select{
+  margin-top: 10px;
+  padding: .6em .4em;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.tblRevendedor input[type="number"]{
+  padding: .6em .4em;
+  border-radius: 5px;
+  border: none;
+}
+.tblRevendedor input[type="button"]{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 32%;
+}
+
+/* TABLA DE REPORTE */
+#tblRevRegistrados{
+  width: 500px;
+  opacity: .8;
+  margin-right: auto;
+}
+#tblRevRegistrados caption{
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  text-align: center;
+}
+#tblRevRegistrados th{
+  text-align: center;
+}
+#tblRevRegistrados td{
+  border-bottom: 2px solid var(--greenOrigin);
+  color: var(--offwhite);
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+
+/* ------------------CONTACTO---------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+.contacto{
+  background-color: var(--green);
+  height: 600px;
+  background-image: url('img/contactoBg.png');
+  background-size: cover;
+  background-position: center;
+  margin-top: 0px;
+  opacity:1;
+  z-index: -1;
+  position: relative;
+}
+.contacto h1{
+  font-size: 2.2em;
+  text-align: center;
+  color: var(--BG);
+  padding-top: 0px;
+}
+.contacto .box1{
+  position: absolute;
+  background-color: var(--lGrey);
+  width: 30%;
+  margin-left: 35%;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-top: 70px;
+  z-index: 1;
+  /* opacity: .8; */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.consultas input,
+.consultas textarea{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  background-color: var(--offwhite);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Raleway';
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+
+}
+.consultas textarea{
+  width: 72%;
+}
+.consultas input{
+  width: 69%;
+  padding: .6em;
+}
+
+.contacto .button{
+  margin-left: 38%;
+  margin-bottom: 10%;
+  background-color: rgba(4, 152, 36, 0.1);
+  font-family: 'Raleway';
+  font-weight: 800;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.contacto .button:hover{
+  background-color: var(--green);
+  color: var(--offwhite);
+}
+
+/* ------------------MEDIA QUERIES------------------------------------*/
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+@media screen and (max-width: 700px)  {
+
+  /* nav */
+  nav img{
+    margin-top: 0px;
+    width: 15%;
+  }
+  nav ul li{
+    font-size: .7em;
+    margin-top: 6px;
+  }
+
+  /* header */
+  .header-content h1{
+    font-size: 2em;
+  }
+
+  .main h1{
+    font-size: 2em;
+  }
+  .main p{
+    margin: 0px;
+    font-size: .8em;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .main .box{
+    width: 90%;
+  }
+  .main img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer{
+    height: 400px;
+  }
+
+  .container-footer{
+    height: 700px;
+  }
+
+  footer img{
+    float: left;
+    width: 20%;
+  }
+
+  footer .container-footer small{
+    font-size: 6em;
+  }
+
+  footer .container-footer p a i{
+    width: 100%;
+    font-size: 150px;
+  }
+
+
+}

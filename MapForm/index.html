@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Google Map API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp6XgNhHQaIPIdvKiiZ57FbNfn9e3b8B8&callback=initMap"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Scripts -->
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="animated fadeInDown" data-duration="1s" data-delay="0.5s">Map & Contact<br></h1>
+  </header>
+  <section class="contact">
+    <!-- GOOGLE MAP -->
+    <div class="container" class="clearfix">
+      <div class="box animated bounceInUp" data-duration="1s" data-delay="1s">
+        <h3><i class="far fa-map"></i><br>Encuentranos</h3>
+        <div id="map"></div>
+      </div>
+      <!-- CONTACT FORM -->
+      <div class="box animated bounceInUp" data-duration="1s" data-delay="1s">
+        <h3><i class="fab fa-wpforms"></i><br>Contactanos</h3>
+        <form class="cf" action="send.php" method="post">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Nombre" name="nombre">
+            <input type="email" id="input-email" placeholder="Email" name="email">
+            <input type="text" id="input-subject" placeholder="Asunto" name="asunto">
+          </div>
+          <div class="half right cf">
+            <textarea name="mensaje" type="text" id="input-message" placeholder="Mensaje"></textarea>
+          </div>
+          <input type="submit" value="Enviar" id="input-submit">
+        </form>
+      </div>
+    </div>
+
+  </section>
+</body>
+
+</html>

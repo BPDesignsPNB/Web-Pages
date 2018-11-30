@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+/* ------------INTRO PAGE STYLING-------------*/
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat;
+}
+.intro{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/introbg2.jpg);
+  background-size: cover;
+  top: 0;
+  display: table;
+  /* opacidad */
+  z-index: 1;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  background-blend-mode: overlay;
+
+  background-size: calc(100% + 50px);
+}
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.content{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3%;
+}
+.content h1{
+  font-family: 'Yantramanav';
+  color: #fff;
+  font-size: 500%;
+  font-weight: 400;
+  margin:0;
+  line-height: 90%;
+}
+.content h4{
+  font-family: 'Yantramanav';
+  color: white;
+  font-size: 200%;
+  font-weight: 400;
+
+  background: -webkit-linear-gradient(#eee, #d477d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .btn{
+  font-family: 'Montserrat';
+  color: #d477d0;
+  text-decoration: none;
+  border: 2px #d477d0 solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 135%;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background: -webkit-linear-gradient(#eee, #d477d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .btn:hover{
+  color: #ffff;
+  border: 2px #ffff solid;
+  transition: all .6s;
+  background: -webkit-linear-gradient(#eee, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+  .content{
+    padding-bottom: 30%;
+  }
+  .content h1{
+    font-size: 400%;
+  }
+  .btn{
+    font-size: 130%;
+    padding: 9px 17px;
+  }
+  .content h4{
+    font-size: 110%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content{
+    padding-bottom: 40%;
+  }
+  .content h1{
+    font-size: 350%;
+  }
+  .btn{
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  .content h4{
+    font-size: 110%;
+  }
+}
+}
+@media screen and (max-width: 480px) {
+  .content{
+    padding-bottom: 50%;
+  }
+  .content h1{
+    font-size: 250%;
+  }
+  .btn{
+    font-size: 110%;
+    padding: 6px 14px;
+  }
+  .content h4{
+    font-size: 200%;
+  }
+}
+}
+/* ------------INTRO PAGE STYLING-------------*/
